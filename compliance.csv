@@ -1,0 +1,21 @@
+_id,vm,check,status,date
+{'$oid': '67303847bbdd617f4a67fc9f'},web_server,Password Policy,Compliant,2024-10-24
+{'$oid': '67303847bbdd617f4a67fca0'},db_server,Firewall Configuration,Non-Compliant,2024-10-25
+{'$oid': '67303847bbdd617f4a67fca1'},app_server,Encryption Standards,Compliant,2024-10-26
+{'$oid': '67303847bbdd617f4a67fca2'},web_server,Antivirus Update,Compliant,2024-10-26
+{'$oid': '67303847bbdd617f4a67fca3'},db_server,User Access Control,Non-Compliant,2024-10-27
+{'$oid': '67303847bbdd617f4a67fca4'},app_server,Software Patching,Compliant,2024-10-27
+{'$oid': '67303847bbdd617f4a67fca5'},mail_server,Password Policy,Compliant,2024-10-28
+{'$oid': '67303847bbdd617f4a67fca6'},dns_server,Firewall Configuration,Non-Compliant,2024-10-29
+{'$oid': '67303847bbdd617f4a67fca7'},ftp_server,Encryption Standards,Compliant,2024-10-29
+{'$oid': '67303847bbdd617f4a67fca8'},app_server,Antivirus Update,Non-Compliant,2024-10-30
+{'$oid': '67303847bbdd617f4a67fca9'},web_server,User Access Control,Compliant,2024-10-30
+{'$oid': '67303847bbdd617f4a67fcaa'},dns_server,Software Patching,Compliant,2024-10-31
+{'$oid': '67303847bbdd617f4a67fcab'},mail_server,Password Policy,Non-Compliant,2024-11-01
+{'$oid': '67303847bbdd617f4a67fcac'},ftp_server,Firewall Configuration,Compliant,2024-11-02
+{'$oid': '67303847bbdd617f4a67fcad'},app_server,Encryption Standards,Compliant,2024-11-03
+{'$oid': '67303847bbdd617f4a67fcae'},dns_server,Antivirus Update,Non-Compliant,2024-11-04
+{'$oid': '67303847bbdd617f4a67fcaf'},web_server,Software Patching,Compliant,2024-11-05
+{'$oid': '67303847bbdd617f4a67fcb0'},db_server,User Access Control,Non-Compliant,2024-11-06
+{'$oid': '67303847bbdd617f4a67fcb1'},mail_server,Password Policy,Compliant,2024-11-07
+{'$oid': '67303847bbdd617f4a67fcb2'},ftp_server,Encryption Standards,Compliant,2024-11-08

@@ -1,0 +1,35 @@
+#batch upload data into MongoDB Compliance database
+from pymongo import MongoClient
+from datetime import datetime
+
+client = MongoClient('mongodb://localhost:27017/')
+db = client['ComplianceDB']
+collection = db['Compliance_results']
+
+data = [
+
+    {"vm": "web_server", "check": "Password Policy", "status": "Compliant", "date": "2024-10-24"},
+    {"vm": "db_server", "check": "Firewall Configuration", "status": "Non-Compliant", "date": "2024-10-25"},
+    {"vm": "app_server", "check": "Encryption Standards", "status": "Compliant", "date": "2024-10-26"},
+    {"vm": "web_server", "check": "Antivirus Update", "status": "Compliant", "date": "2024-10-26"},
+    {"vm": "db_server", "check": "User Access Control", "status": "Non-Compliant", "date": "2024-10-27"},
+    {"vm": "app_server", "check": "Software Patching", "status": "Compliant", "date": "2024-10-27"},
+    {"vm": "mail_server", "check": "Password Policy", "status": "Compliant", "date": "2024-10-28"},
+    {"vm": "dns_server", "check": "Firewall Configuration", "status": "Non-Compliant", "date": "2024-10-29"},
+    {"vm": "ftp_server", "check": "Encryption Standards", "status": "Compliant", "date": "2024-10-29"},
+    {"vm": "app_server", "check": "Antivirus Update", "status": "Non-Compliant", "date": "2024-10-30"},
+    {"vm": "web_server", "check": "User Access Control", "status": "Compliant", "date": "2024-10-30"},
+    {"vm": "dns_server", "check": "Software Patching", "status": "Compliant", "date": "2024-10-31"},
+    {"vm": "mail_server", "check": "Password Policy", "status": "Non-Compliant", "date": "2024-11-01"},
+    {"vm": "ftp_server", "check": "Firewall Configuration", "status": "Compliant", "date": "2024-11-02"},
+    {"vm": "app_server", "check": "Encryption Standards", "status": "Compliant", "date": "2024-11-03"},
+    {"vm": "dns_server", "check": "Antivirus Update", "status": "Non-Compliant", "date": "2024-11-04"},
+    {"vm": "web_server", "check": "Software Patching", "status": "Compliant", "date": "2024-11-05"},
+    {"vm": "db_server", "check": "User Access Control", "status": "Non-Compliant", "date": "2024-11-06"},
+    {"vm": "mail_server", "check": "Password Policy", "status": "Compliant", "date": "2024-11-07"},
+    {"vm": "ftp_server", "check": "Encryption Standards", "status": "Compliant", "date": "2024-11-08"}
+
+]
+
+result = collection.insert_many(data)
+print(f"inserted recordssuccessfully",result.inserted_ids)
